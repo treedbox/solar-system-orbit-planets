@@ -1,7 +1,7 @@
 # SVG Solar System: Orbit of Planets
 > A pure SVG Solar System with CSS animated Orbit of Planets
 
-![SVG Solar System: Orbit of Planets](assets/screenshot.jpg)
+![SVG Solar System: Orbit of Planets](assets/screenshot.png)
 
 ## Demo: Online Test
 [https://github.com/treedbox/solar-system-orbit-planets](https://github.com/treedbox/solar-system-orbit-planets)
