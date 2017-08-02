@@ -4,7 +4,7 @@
 ![SVG Solar System: Orbit of Planets](assets/screenshot.png)
 
 ## Demo: Online Test
-[https://github.com/treedbox/solar-system-orbit-planets](https://github.com/treedbox/solar-system-orbit-planets)
+[https://treedbox.github.io/solar-system-orbit-planets/](https://treedbox.github.io/solar-system-orbit-planets/)
 
 ## How it works
 HTML: Using **SVG** to draw groups of circles:
