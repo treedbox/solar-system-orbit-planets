@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name='author' content="Jonimar Marques Policarpo" />
+	<meta name='publisher' content="Treedbox.com" />
+	<title>SVG Solar System Orbit Planets - Treedox</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="icon/treedbox.png">
+	<link rel="icon" href="icon/treedbox-ani.svg">
+</head>
+<body>
+	<svg style="fill-rule:evenodd" viewBox="0 0 25000 25000">
+		<defs>
+			<radialGradient id="sun">
+				<stop offset="30%" stop-color="yellow"/>
+				<stop offset="100%" stop-color="orange"/>
+			</radialGradient>
+			<radialGradient id="sunshine">
+				<stop offset="10%" stop-color="orange"/>
+				<stop offset="95%" stop-color="transparent"/>
+			</radialGradient>
+			<linearGradient id="shadow">
+				<stop offset="0" stop-color="transparent"/>
+				<stop offset="50%" stop-color="#000"/>
+			</linearGradient>
+			<linearGradient id="mercury-shadow">
+				<stop offset="50%"  stop-color="transparent"/>
+				<stop offset="100%" stop-color="rgba(0,0,0,.5)"/>
+			</linearGradient>
+			<linearGradient id="venus" x1="0" y1="0" x2="0" y2="100%">
+				<stop offset="30%"  stop-color="#f0990e"/>
+				<stop offset="40%"  stop-color="#fecb36"/>
+				<stop offset="60%"  stop-color="#f0990e"/>
+				<stop offset="100%" stop-color="#f0990e"/>
+			</linearGradient>
+			<radialGradient id="earth" fx="0.2" fy="0.2">
+				<stop offset="50%" stop-color="#009688"/>
+				<stop offset="60%" stop-color="#009688"/>
+				<stop offset="70%" stop-color="#0270e9"/>
+				<stop offset="100%" stop-color="#0270e9"/>
+			</radialGradient>
+			<radialGradient id="mars" fx="0.3" fy="0.3">
+				<stop offset="60%" stop-color="#e25409"/>
+				<stop offset="65%" stop-color="#e25409"/>
+				<stop offset="100%" stop-color="#BF360C"/>
+			</radialGradient>
+			<linearGradient id="jupiter" x1="0" y1="0" x2="0" y2="100%">
+				<stop offset="15%"   stop-color="#d7b872"/>
+				<stop offset="25%"  stop-color="#a24416"/>
+				<stop offset="30%"  stop-color="#a24416"/>
+				<stop offset="40%"  stop-color="#a6563e"/>
+				<stop offset="60%"  stop-color="#a6563e"/>
+				<stop offset="80%"  stop-color="#6f3620"/>
+				<stop offset="100%" stop-color="#d7b872"/>
+			</linearGradient>
+			<linearGradient id="saturn" x1="0" x2="0" y1="0" y2="100%">
+				<stop offset="0%"   stop-color="#ec9a22"/>
+				<stop offset="40%"  stop-color="#d16c10"/>
+				<stop offset="55%"  stop-color="#d16c10"/>
+				<stop offset="50%"  stop-color="#ec9925"/>
+				<stop offset="70%"  stop-color="#ec9925"/>
+				<stop offset="75%"  stop-color="#d07b15"/>
+				<stop offset="100%" stop-color="#ec9a22"/>
+			</linearGradient>
+			<linearGradient id="uranus" x1="0" y1="0" x2="0" y2="100%">
+				<stop offset="15%"   stop-color="#199cdd"/>
+				<stop offset="25%"  stop-color="#32b1fd"/>
+				<stop offset="30%"  stop-color="#199cdd"/>
+				<stop offset="40%"  stop-color="#32b1fd"/>
+				<stop offset="60%"  stop-color="#199cdd"/>
+				<stop offset="80%"  stop-color="#32b1fd"/>
+				<stop offset="100%" stop-color="#199cdd"/>
+			</linearGradient>
+			<linearGradient id="neptune" x1="0" y1="0" x2="0" y2="100%">
+				<stop offset="0%"   stop-color="#005de8"/>
+				<stop offset="25%"  stop-color="#0747a3"/>
+				<stop offset="50%"  stop-color="#287af7"/>
+				<stop offset="75%"  stop-color="#0747a3"/>
+				<stop offset="100%" stop-color="#005de8"/>
+			</linearGradient>
+		</defs>
+		<g>
+			<circle class="neptune-orbit" cx="50%" cy="50%" r="12000"/>
+			<circle class="uranus-orbit" cx="50%" cy="50%" r="10500"/>
+			<circle class="saturn-orbit" cx="50%" cy="50%" r="8000"/>
+			<circle class="jupiter-orbit" cx="50%" cy="50%" r="5500"/>
+			<circle class="mars-orbit" cx="50%" cy="50%" r="4100"/>
+			<circle class="earth-orbit" cx="50%" cy="50%" r="3100"/>
+			<circle class="venus-orbit" cx="50%" cy="50%" r="2000"/>
+			<circle class="mercury-orbit" cx="50%" cy="50%" r="1000"/>
+			<circle class="sun" cx="50%" cy="50%"  r="500"/>
+
+			<g class="neptune-group">
+				<circle class="neptune" cx="50%" cy="50%" r="450"/>
+				<circle class="shadow" cx="50%" cy="50%" r="450"/>
+			</g>
+			<g class="uranus-group">
+				<circle class="uranus" cx="50%" cy="50%" r="450"/>
+				<circle class="shadow" cx="50%" cy="50%" r="450"/>
+			</g>
+			<g class="saturn-group">
+				<circle class="saturn saturn-ring2" cx="50%" cy="50%" r="1400"/>
+				<circle class="shadow" cx="50%" cy="50%" r="1450"/>
+				<circle class="saturn saturn-ring1" cx="50%" cy="50%" r="1100"/>
+				<circle class="shadow" cx="50%" cy="50%" r="1320"/>
+				<circle class="saturn" cx="50%" cy="50%" r="700"/>
+				<circle class="shadow" cx="50%" cy="50%" r="700"/>
+			</g>
+			<g class="jupiter-group">
+				<circle class="jupiter" cx="50%" cy="50%" r="800"/>
+				<circle class="shadow" cx="50%" cy="50%" r="800"/>
+			</g>
+			<g class="mars-group">
+				<circle class="mars" cx="50%" cy="50%" r="300"/>
+				<circle class="shadow" cx="50%" cy="50%" r="300"/>
+			</g>
+			<g class="earth-group">
+				<circle class="earth-limit" cx="50%" cy="50%" r="590"/>
+				<circle class="moon-orbit" cx="50%" cy="50%" r="500"/>
+				<g class="moon-group">
+					<circle class="moon" cx="50%" cy="50%" r="50"/>
+					<circle class="moon-shadow" cx="50%" cy="50%" r="50"/>
+				</g>
+				<circle class="earth" cx="50%" cy="50%" r="400"/>
+				<circle class="shadow" cx="50%" cy="50%" r="400"/>
+			</g>
+			<g class="venus-group">
+				<circle class="venus" cx="50%" cy="50%" r="400"/>
+				<circle class="shadow" cx="50%" cy="50%" r="400"/>
+			</g>
+			<g class="mercury-group">
+				<circle class="mercury" cx="50%" cy="50%" r="100"/>
+				<circle class="mercury-shadow" cx="50%" cy="50%" r="100"/>
+			</g>
+		</g>
+	</svg>
+</body>
+</html>
